@@ -1,0 +1,38 @@
+vile:
+  ignore: [
+      "node_modules",
+      ".build",
+      ".test",
+      "coverage",
+      "lib"
+    ]
+
+length:
+  config:
+    file: 250
+    line: 80
+
+license:
+  config: [
+      "MPL-2.0",
+      "MIT",
+      "MIT*",
+      "The MIT License",
+      "Public Domain",
+      "PSF",
+      "BSD",
+      "BSD*",
+      "BSD-3-Clause",
+      "BSD-2-Clause",
+      "BSD-3-Clause AND MIT",
+      "Artistic-2.0",
+      "(BSD-2-Clause OR MIT OR Apache-2.0)",
+      "ISC",
+      "WTFPL",
+      "(BSD-2-Clause OR WTFPL)",
+      "Apache*",
+      "Apache License 2.0",
+      "Apache 2.0",
+      "Apache-2.0",
+      "WTFPL"
+    ]
