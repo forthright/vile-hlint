@@ -9,6 +9,10 @@
     "dev": "bin/dev",
     "test": "bin/test"
   },
+  "files": [
+    "lib",
+    "README.md"
+  ],
   "keywords": [
     "vile",
     "hlint",
