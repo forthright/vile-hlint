@@ -19,6 +19,14 @@ Example:
     npm i vile-hlint
     cabal install hlint
 
+## Config
+
+```yaml
+hlint:
+  config:
+    path: "custom hintfile path"
+```
+
 ## Architecture
 
 This project is currently written in JavaScript. HLint provides

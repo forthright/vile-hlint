@@ -1,69 +1,42 @@
 let _ = require("lodash")
 let path = require("path")
-let ignore = require("ignore-file")
 let vile = require("@brentlintner/vile")
 
-// TODO: support custom ignoring (with is_not_ignored)
-// TODO: get a list of all haskell files based on ignore
+// TODO: dynamically map options base don config
+let hlint = (config) => {
+  let hintpath = _.get(config, "path")
+  let args = [ "--color=never", ".", "--json" ]
 
-let allowed = (ignore_list = []) => {
-  // TODO: support windows
-  let ignored = ignore.compile(ignore_list.join("\n"))
-
-  return (file) => {
-    return file.match(/\.hs$/) && !ignored(file)
-  }
-}
-
-let hlint = (custom_config_path) => {
-  let opts = {}
-
-  if (custom_config_path) { opts.h = custom_config_path }
-
-  opts.args = _.reduce(opts, (arr, option, name) => {
-    return arr.concat([`-${name}`, option])
-  }, []).concat(["--color=never", ".", "--json"])
+  if (hintpath) args.push("-h", hintpath)
 
   return vile
-    .spawn("hlint", opts)
-    .then((stdout) => {
-      return stdout ? JSON.parse(stdout) : { files: [] }
-    })
+    .spawn("hlint", { args: args })
+    .then((stdout) =>
+      stdout ? JSON.parse(stdout) : { files: [] })
 }
 
-let to_vile_issue_type = (hlint_severity) => {
-  return hlint_severity.toLowerCase() == "error" ?
-    vile.ERROR : vile.WARNING
-}
+let to_vile_issue_type = (hlint_severity) =>
+  hlint_severity.toLowerCase() == "error" ?
+    vile.ERR : vile.STYL
 
 let vile_issue = (issue) => {
-  return vile.issue(
-    to_vile_issue_type(issue.severity),
-    path.normalize(issue.file),
-    `${issue.hint} (${issue.from} ---> ${issue.to})`,
-    { line: issue.startLine, character: issue.startColumn },
-    { line: issue.endLine, character: issue.endColumn }
-  )
-}
-
-// TODO: get all Haskell files checked for reporting
-let punish = (plugin_data) => {
-  return vile.promise_each(
-    process.cwd(),
-    allowed(plugin_data.ignore),
-    (filepath) => vile.issue(vile.OK, filepath),
-    { read_data: false }
-  )
-  .then((all_files) => {
-    return hlint(_.get(plugin_data, "config"))
-      .then((hlint_json) => hlint_json.map(vile_issue))
-      .then((issues) => {
-        return _.reject(all_files, (file) => {
-          return _.any(issues, (issue) => issue.file == file)
-        }).concat(issues)
-      })
+  let message = `${issue.hint} (${issue.from} ---> ${issue.to})`
+  return vile.issue({
+    type: to_vile_issue_type(issue.severity),
+    path: path.normalize(issue.file),
+    title: message,
+    message: message,
+    signature: `hlint::${issue.hint}`,
+    where: {
+      start: { line: issue.startLine, character: issue.startColumn },
+      end: { line: issue.endLine, character: issue.endColumn }
+    }
   })
 }
+
+let punish = (plugin_data) =>
+  hlint(_.get(plugin_data, "config"))
+    .then((hlint_json) => hlint_json.map(vile_issue))
 
 module.exports = {
   punish: punish
