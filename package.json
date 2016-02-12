@@ -1,6 +1,6 @@
 {
   "name": "@forthright/vile-hlint",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A vile plugin for hlint",
   "main": "lib/index.js",
   "scripts": {
