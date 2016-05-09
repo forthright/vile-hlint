@@ -1,7 +1,8 @@
-# vile-hlint
+# vile-hlint [![Circle CI](https://circleci.com/gh/forthright/vile-hlint.svg?style=svg&circle-token=198632e74a5cc53f485da11dcf23a3917a3cd19d)](https://circleci.com/gh/forthright/vile-hlint)
 
-A [vile](http://vile.io) plugin for
-[hlint](https://hackage.haskell.org/package/hlint).
+[![score-badge](https://vile.io/brentlintner/vile-hlint/badges/score?token=BxYn2MUBS31yusizLNDz)](https://vile.io/brentlintner/vile-hlint) [![security-badge](https://vile.io/brentlintner/vile-hlint/badges/security?token=BxYn2MUBS31yusizLNDz)](https://vile.io/brentlintner/vile-hlint) [![coverage-badge](https://vile.io/brentlintner/vile-hlint/badges/coverage?token=BxYn2MUBS31yusizLNDz)](https://vile.io/brentlintner/vile-hlint) [![dependency-badge](https://vile.io/brentlintner/vile-hlint/badges/dependency?token=BxYn2MUBS31yusizLNDz)](https://vile.io/brentlintner/vile-hlint)
+
+A [vile](https://vile.io) plugin for [hlint](https://hackage.haskell.org/package/hlint).
 
 ## Requirements
 
