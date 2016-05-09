@@ -58,10 +58,6 @@ length:
     file: 120
     line: 80
 
-coverage:
-  config:
-    path: coverage/lcov.info
-
 license:
   config:
     ignored:

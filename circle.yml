@@ -1,0 +1,14 @@
+machine:
+  node:
+    version: 5.11.1
+
+dependencies:
+  pre:
+    - sh bin/check-libstdc-deb
+    - sh bin/list-env-versions
+
+test:
+  override:
+    - echo "TODO"
+  post:
+    - time npm run vile
