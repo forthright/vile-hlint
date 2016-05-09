@@ -6,6 +6,8 @@ dependencies:
   pre:
     - sh bin/check-libstdc-deb
     - sh bin/list-env-versions
+  post:
+    - npm run compile
 
 test:
   override:
