@@ -17,7 +17,7 @@ let hlint = (config) => {
 
 let to_vile_issue_type = (hlint_severity) =>
   hlint_severity.toLowerCase() == "error" ?
-    vile.ERR : vile.STYL
+    vile.MAIN : vile.STYL
 
 let vile_issue = (issue) => {
   let message = `${issue.hint} (${issue.from} ---> ${issue.to})`
