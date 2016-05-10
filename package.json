@@ -1,6 +1,6 @@
 {
   "name": "@forthright/vile-hlint",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A vile plugin for hlint",
   "main": "lib/index.js",
   "scripts": {
@@ -25,14 +25,12 @@
   "devDependencies": {
     "@forthright/vile": ">=0.8.1",
     "@forthright/vile-git": "^0.3.1",
-    "@forthright/vile": ">=0.8.1",
     "@forthright/vile-coffeelint": ">=0.1.10",
     "@forthright/vile-comment": ">=0.1.14",
     "@forthright/vile-coverage": ">=0.2.10",
     "@forthright/vile-depcheck": ">=0.1.9",
     "@forthright/vile-eclint": ">=0.1.7",
     "@forthright/vile-eslint": ">=0.1.8",
-    "@forthright/vile-git": "^0.3.1",
     "@forthright/vile-language": ">=0.1.9",
     "@forthright/vile-ncu": ">=0.1.15",
     "@forthright/vile-newline": ">=0.1.9",
