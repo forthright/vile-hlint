@@ -8,7 +8,7 @@
     "compile-dev": "coffee -cbo .test test",
     "dev": "bin/dev",
     "test": "bin/test",
-    "vile": "vile -csipd --nodecorations"
+    "vile": "vile p -usi --nodecorations"
   },
   "files": [
     "lib",
@@ -23,7 +23,7 @@
     "lodash": "^4.12.0"
   },
   "devDependencies": {
-    "@forthright/vile": ">=0.8.2",
+    "@forthright/vile": ">= 0.9.1",
     "@forthright/vile-git": "^0.3.3",
     "@forthright/vile-coffeelint": ">=0.1.11",
     "@forthright/vile-comment": ">=0.1.15",
