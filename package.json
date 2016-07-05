@@ -8,7 +8,8 @@
     "compile-dev": "coffee -cbo .test test",
     "dev": "bin/dev",
     "test": "bin/test",
-    "vile": "vile p -usi --nodecorations"
+    "vile": "vile p -usi --nodecorations",
+    "release-it": "release-it"
   },
   "files": [
     "lib",
