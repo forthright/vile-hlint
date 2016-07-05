@@ -2,9 +2,13 @@ machine:
   node:
     version: 5.11.1
 
+checkout:
+  post:
+    - "[[ ! -s \"$(git rev-parse --git-dir)/shallow\" ]] || git fetch --unshallow"
+    - git checkout -f $CIRCLE_BRANCH
+
 dependencies:
   pre:
-    - sh bin/check-libstdc-deb
     - sh bin/list-env-versions
   post:
     - npm run compile
