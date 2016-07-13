@@ -24,14 +24,14 @@
     "lodash": "^4.13.1"
   },
   "devDependencies": {
-    "@forthright/vile": ">= 0.9.1",
+    "@forthright/vile": ">=0.9.5",
     "@forthright/vile-git": "^0.4.2",
-    "@forthright/vile-coffeelint": ">=0.1.12",
+    "@forthright/vile-coffeelint": ">=0.1.13",
     "@forthright/vile-comment": ">=0.1.16",
     "@forthright/vile-coverage": ">=0.2.13",
     "@forthright/vile-depcheck": ">=0.1.11",
     "@forthright/vile-eclint": ">=0.1.9",
-    "@forthright/vile-eslint": ">=0.1.10",
+    "@forthright/vile-eslint": ">=0.1.12",
     "@forthright/vile-language": ">=0.1.11",
     "@forthright/vile-ncu": ">=0.1.17",
     "@forthright/vile-newline": ">=0.1.11",
@@ -45,7 +45,7 @@
     "istanbul": "0.4.4",
     "mimus": "0.2.2",
     "mocha": "2.5.3",
-    "npm-check-updates": ">=2.6.8",
+    "npm-check-updates": ">=2.7.0",
     "release-it": "^2.4.0",
     "sinon": "1.17.4",
     "sinon-chai": "2.8.0"

@@ -3,11 +3,17 @@ let path = require("path")
 let vile = require("@forthright/vile")
 
 // TODO: dynamically map options base don config
-let hlint = (config) => {
+let hlint = (config, allow) => {
   let hintpath = _.get(config, "path")
-  let args = [ "--color=never", ".", "--json" ]
+  let args = [ "--color=never", "--json" ]
 
   if (hintpath) args.push("-h", hintpath)
+
+  if (_.isEmpty(allow)) {
+    args.push(".")
+  } else {
+    args = _.concat(args, allow)
+  }
 
   return vile
     .spawn("hlint", { args: args })
@@ -34,9 +40,12 @@ let vile_issue = (issue) => {
   })
 }
 
-let punish = (plugin_data) =>
-  hlint(_.get(plugin_data, "config"))
+let punish = (plugin_data) => {
+  let plugin_config = _.get(plugin_data, "config")
+  let allow = _.get(plugin_data, "allow", [])
+  return hlint(plugin_config, allow)
     .then((hlint_json) => hlint_json.map(vile_issue))
+}
 
 module.exports = {
   punish: punish

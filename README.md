@@ -17,7 +17,8 @@ Currently, you need to have hlint installed manually.
 
 Example:
 
-    npm i vile-hlint
+    npm i vile --save-dev
+    npm i vile-hlint --save-dev
     cabal install hlint
 
 ## Config
@@ -26,6 +27,16 @@ Example:
 hlint:
   config:
     path: "custom hintfile path"
+```
+
+## Allowing Files
+
+If no `vile.allow` or `hlint.allow` is set, `.` is used.
+
+```yaml
+hlint:
+  allow:
+    - src
 ```
 
 ## Architecture
