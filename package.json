@@ -21,7 +21,7 @@
     "haskell"
   ],
   "dependencies": {
-    "lodash": "^4.15.0"
+    "lodash": "^4.16.2"
   },
   "devDependencies": {
     "@forthright/vile": ">=0.10.0",
@@ -38,8 +38,8 @@
     "@forthright/vile-nsp": ">=0.2.11",
     "@forthright/vile-semver": ">=0.1.10",
     "@forthright/vile-whitespace": ">=0.1.10",
-    "babel-cli": "^6.14.0",
-    "babel-preset-es2015": "^6.14.0",
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
     "chai": "3.5.0",
     "coffee-script": "1.11.0",
     "istanbul": "0.4.5",
