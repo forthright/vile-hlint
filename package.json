@@ -21,11 +21,11 @@
     "haskell"
   ],
   "dependencies": {
-    "lodash": "^4.16.6"
+    "lodash": "^4.17.1"
   },
   "devDependencies": {
-    "@forthright/vile": ">=0.10.2",
-    "@forthright/vile-git": "^0.4.2",
+    "@forthright/vile": ">=0.11.0",
+    "@forthright/vile-git": "^0.5.0",
     "@forthright/vile-coffeelint": ">=0.1.13",
     "@forthright/vile-comment": ">=0.1.16",
     "@forthright/vile-coverage": ">=0.2.13",
@@ -46,11 +46,11 @@
     "mimus": "0.2.3",
     "mocha": "3.1.2",
     "npm-check-updates": ">=2.8.6",
-    "release-it": "^2.4.3",
+    "release-it": "^2.5.1",
     "sinon": "1.17.6",
     "sinon-chai": "2.8.0"
   },
   "peerDependencies": {
-    "@forthright/vile": ">=0.10.2"
+    "@forthright/vile": ">=0.11.0"
   }
 }
