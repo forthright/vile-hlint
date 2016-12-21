@@ -1,6 +1,6 @@
 # vile-hlint [![Circle CI](https://circleci.com/gh/forthright/vile-hlint.svg?style=svg&circle-token=198632e74a5cc53f485da11dcf23a3917a3cd19d)](https://circleci.com/gh/forthright/vile-hlint)
 
-[![score-badge](https://vile.io/api/v0/projects/vile-hlint/badges/score?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-hlint) [![security-badge](https://vile.io/api/v0/projects/vile-hlint/badges/security?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~/brentlintner/vile-hlint) [![coverage-badge](https://vile.io/api/v0/projects/vile-hlint/badges/coverage?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~/brentlintner/vile-hlint) [![dependency-badge](https://vile.io/api/v0/projects/vile-hlint/badges/dependency?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~/brentlintner/vile-hlint)
+[![score-badge](https://vile.io/api/v0/projects/vile-hlint/badges/score?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-hlint) [![security-badge](https://vile.io/api/v0/projects/vile-hlint/badges/security?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-hlint) [![coverage-badge](https://vile.io/api/v0/projects/vile-hlint/badges/coverage?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-hlint) [![dependency-badge](https://vile.io/api/v0/projects/vile-hlint/badges/dependency?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-hlint)
 
 A [vile](https://vile.io) plugin for [hlint](https://hackage.haskell.org/package/hlint).
 
