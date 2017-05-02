@@ -53,11 +53,11 @@
     "vile-depcheck": ">=0.1.12",
     "vile-eclint": ">=0.1.13",
     "vile-eslint": ">=0.1.13",
-    "vile-git": "^0.5.1",
+    "vile-git": ">=0.5.1",
     "vile-language": ">=0.1.12",
     "vile-ncu": ">=0.2.1",
     "vile-nsp": ">=0.2.13",
-    "vile-stat": "0.0.14"
+    "vile-stat": ">=0.0.14"
   },
   "peerDependencies": {
     "vile": ">=0.13.0"
