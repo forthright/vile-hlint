@@ -1,6 +1,6 @@
 let _ = require("lodash")
 let path = require("path")
-let vile = require("@forthright/vile")
+let vile = require("vile")
 
 // TODO: dynamically map options base don config
 let hlint = (config, allow) => {
