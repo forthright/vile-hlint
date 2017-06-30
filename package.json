@@ -46,7 +46,7 @@
     "release-it": "^2.8.0",
     "sinon": "2.3.5",
     "sinon-chai": "2.11.0",
-    "vile": "^0.17.1",
+    "vile": "^0.18.0",
     "vile-coffeelint": "^0.1.16",
     "vile-comment": "^0.1.19",
     "vile-coverage": "^0.2.15",
@@ -54,10 +54,9 @@
     "vile-eclint": "^0.1.14",
     "vile-eslint": "^0.1.14",
     "vile-git": "^0.5.3",
-    "vile-language": "^0.1.13",
     "vile-ncu": "^0.2.4",
     "vile-nsp": "^0.2.14",
-    "vile-stat": "^0.0.15"
+    "vile-stat": "^0.1.0"
   },
   "peerDependencies": {
     "vile": ">=0.15.0"
