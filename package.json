@@ -1,6 +1,6 @@
 {
   "name": "vile-hlint",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Identify common style and maintainability issues in your Haskell code.",
   "main": "lib/index.js",
   "files": [
