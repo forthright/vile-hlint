@@ -1,7 +1,7 @@
 {
   "name": "vile-hlint",
   "version": "0.2.2",
-  "description": "A vile plugin for hlint",
+  "description": "Identify common style and maintainability issues in your Haskell code.",
   "main": "lib/index.js",
   "files": [
     "lib",

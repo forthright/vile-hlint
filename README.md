@@ -1,12 +1,12 @@
 # vile-hlint [![Circle CI](https://circleci.com/gh/forthright/vile-hlint.svg?style=shield&circle-token=198632e74a5cc53f485da11dcf23a3917a3cd19d)](https://circleci.com/gh/forthright/vile-hlint) [![score-badge](https://vile.io/api/v0/projects/vile-hlint/badges/score?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-hlint) [![security-badge](https://vile.io/api/v0/projects/vile-hlint/badges/security?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-hlint) [![coverage-badge](https://vile.io/api/v0/projects/vile-hlint/badges/coverage?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-hlint) [![dependency-badge](https://vile.io/api/v0/projects/vile-hlint/badges/dependency?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-hlint)
 
-A [vile](https://vile.io) plugin for [hlint](https://hackage.haskell.org/package/hlint).
+A [Vile](https://vile.io) plugin for identifying common style and
+maintainability issues in your Haskell code (via [HLint](https://github.com/ndmitchell/hlint)).
 
 ## Requirements
 
-- [nodejs](http://nodejs.org)
-- [npm](http://npmjs.org)
-- [haskell](http://nodejs.org)
+- [Node.js](http://nodejs.org)
+- [Haskell](https://www.haskell.org)
 - [cabal-install](https://www.haskell.org/cabal/download.html)
 
 ## Installation
@@ -38,8 +38,6 @@ hlint:
 
 ## Versioning
 
-This project ascribes to [semantic versioning](http://semver.org).
-
 ## Licensing
 
 This project is licensed under the [MPL-2.0](LICENSE) license.
@@ -65,8 +63,6 @@ Even if you are uncomfortable with code, an issue or question is welcome.
 
 ### Code Of Conduct
 
-This project ascribes to [contributor-covenant.org](http://contributor-covenant.org).
-
 By participating in this project you agree to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Maintainers
@@ -83,7 +79,7 @@ IPC option is implemented.
 - `src` is es6+ syntax compiled with [babel](https://babeljs.io)
 - `lib` generated js library
 
-## Hacking
+## Developing
 
     cd vile-hlint
     npm install
