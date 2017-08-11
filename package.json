@@ -45,7 +45,7 @@
     "release-it": "^2.8.0",
     "sinon": "3.0.0",
     "sinon-chai": "2.12.0",
-    "vile": "^0.18.0",
+    "vile": "^0.19.0",
     "vile-coffeelint": "^0.1.16",
     "vile-comment": "^0.1.19",
     "vile-coverage": "^0.3.0",
